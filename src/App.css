@@ -17,10 +17,19 @@ body {
 }
 
 .weather-box {
-  border: 3px solid white;
+  border: 5px solid white;
   padding: 50px;
-  border-radius: 20px;
-  background-color: bisque;
+  border-radius: 15px;
+  background-color: #8e8e8e;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.weatherBtn {
+  padding: 5px;
+  margin: 2px;
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
