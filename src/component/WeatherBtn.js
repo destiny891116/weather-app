@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 const WeatherBtn = ({cities, setCity, handleCityChange}) => {
   return (
     <div>
-       <Button className="weatherBtn" variant={`${setCity === null ? "outline-warning" : "warning"}`} onClick={() => handleCityChange("current")}>Current Location</Button>
+       <img className='imgBtn' src={'/img/free-icon-target-2541673.png'} alt='btn' variant={`${setCity === null ? "outline-warning" : "warning"}`} onClick={() => handleCityChange("current")} />
 
         {cities.map((item, index)=> (
           <Button className="weatherBtn" variant={`${setCity === item ? "outline-warning" : "warning"}`} onClick={() => handleCityChange(item)} >{item}</Button>

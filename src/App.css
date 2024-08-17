@@ -24,10 +24,19 @@ body {
   opacity: 0.8;
 }
 
+.imgBtn {
+  width: 45px;
+  padding: 5px;
+  margin: 2px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
 .weatherBtn {
   padding: 5px;
   margin: 2px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
