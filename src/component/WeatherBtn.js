@@ -8,7 +8,7 @@ const WeatherBtn = ({cities, setCity, handleCityChange}) => {
 
         {cities.map((item, index)=> (
           <Button className="weatherBtn" variant={`${setCity === item ? "outline-warning" : "warning"}`} onClick={() => handleCityChange(item)} >{item}</Button>
-        ))};
+        ))}
     </div>
   )
 }
