@@ -21,7 +21,7 @@ function App() {
 
   //현재위치 날씨정보
   const getCurrentLocation = () => {
-
+    console.log("11");
     navigator.geolocation.getCurrentPosition((position)=> {
       let lat = position.coords.latitude;
       let lon = position.coords.longitude;
@@ -32,10 +32,12 @@ function App() {
 
   // 현재위치 날씨 정보
   const getWeatherByCurrentLocation = async (lat, lon) => {
+    console.log("22");
     let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=0e3eddf3ffdc21e4c0addc01af2f0f3b&units=metric`;
     setLoading(true);
     let response = await fetch(url);
     let data = await response.json();
+    setIconId(data.weather[0].icon);
     setWeather(data);
     setLoading(false);
   };
@@ -69,7 +71,7 @@ function App() {
   }
 
   useEffect(() => {
-    if( city === "") {
+    if( city === "" || city === null) {
       //날씨정보 가져오기
       getCurrentLocation();
     } else {
