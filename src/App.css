@@ -1,8 +1,6 @@
 body {
-  background: #314755;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100vh;
+  background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231105/pngtree-heavenly-pink-clouds-a-textured-sky-background-image_13804545.png');
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -23,7 +21,7 @@ body {
   background-color: #8e8e8e;
   text-align: center;
   color: #ffffff;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .weatherBtn {
